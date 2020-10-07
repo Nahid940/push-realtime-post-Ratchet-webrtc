@@ -8,7 +8,6 @@
 
 namespace App;
 
-
 use Ratchet\ConnectionInterface;
 use Ratchet\Wamp\Topic;
 use Ratchet\Wamp\WampServerInterface;
@@ -62,6 +61,7 @@ class Pusher implements WampServerInterface
         // TODO: Implement onCall() method.
         $conn->callError($id, $topic, 'You are not allowed to make calls')->close();
     }
+
 
     /**
      * A request to subscribe to a topic has been made
